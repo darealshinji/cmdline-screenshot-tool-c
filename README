@@ -1,0 +1,14 @@
+Save a screenshot of the Windows desktop in .bmp format unsing only the Windows API.
+The image will be saved as "screenshot.bmp" in the current working directory.
+
+All linker dependencies are specified explicitly, so you can compile
+screenshot-simple.exe by simply running:
+   cl screenshot-simple.c
+
+To compile with GCC run:
+   gcc -Wall -Wextra -pedantic -O3 screenshot-simple.c -s -static -o screenshot-simple.exe -lgdi32
+
+License: UnLicense (public domain) - <http://unlicense.org/>
+
+For an advanced version that requires C++ see https://github.com/darealshinji/cmdline-screenshot-tool
+
